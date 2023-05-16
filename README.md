@@ -1,0 +1,20 @@
+## Airplane seating algorithm
+
+Rules for seating
+
+
+• Always seat passengers star:ng from the front row to back,
+startng from the left to the right
+• Fill aisle seats first followed by window seats followed by center
+seats (any order in center seats)
+
+Input to the program will be
+
+• a 2D array that represents the rows and columns [ [3,4], [4,5], [2,3], [3,4] ]
+
+• Number of passengers waitng in queue Number
+
+
+* Window Seat
+* Middle Seat
+* Aisle Seat
