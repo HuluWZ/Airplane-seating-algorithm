@@ -4,7 +4,6 @@ const prompt = require("readline-sync");
 
 module.exports.createAirplaneSeating = () => {
   console.log(" AIRPLANE SEATING ALGORITHM  ✈️ ")
-  
   let  inputSeats = prompt.question("Enter 2D array rows and columns : ")
   const inputPassengers = prompt.question("Enter number of passengers  waiting in queue : ")
   let inputs = inputSeats.substr(0, inputSeats.length - 1).substr(1).split(',').map((item) => parseInt(item.replace("[", '').replace("]", '')));
