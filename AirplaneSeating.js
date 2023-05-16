@@ -62,6 +62,7 @@ const {isValid2dArray, isValidPassengers} = require('./helper/validator.js');
 
     seats.forEach((row, rowI) => {
       row.forEach((seat, seatI) => {
+        // console.log("Aisle Seat",this.remainingPassengers)
         if (this.remainingPassengers < 1) {
           return;
         }
@@ -82,6 +83,7 @@ const {isValid2dArray, isValidPassengers} = require('./helper/validator.js');
 
     seats.forEach((row, rowI) => {
       row.forEach((seat, seatI) => {
+        // console.log("Window Seat ",this.remainingPassengers)
         if (this.remainingPassengers < 1) {
           return;
         }
@@ -100,6 +102,7 @@ const {isValid2dArray, isValidPassengers} = require('./helper/validator.js');
 
     seats.forEach((row, rowI) => {
       row.forEach((seat, seatI) => {
+        // console.log("Middle Seat",this.remainingPassengers)
         if (this.remainingPassengers < 1) {
           return;
         }

@@ -1,18 +1,6 @@
 const _throwError = function (message) {
   throw new Error(message);
 }
-
-// const chunkArray = (arr) => { 
-//  var chunkSize = parseInt(arr.length / 2);
-//   arr = arr.substr(0, arr.length - 1).substr(1).split(',').map((item) => parseInt(item.replace("[", '').replace("]", '')));
-//   var chunkLength = 4;
-//   var chunks = [];
-//    for (var i = 0; i < chunkSize; i++) {
-//          if(chunkLength*(i+1)<=arr.length)chunks.push(arr.slice(chunkLength*i, chunkLength*(i+1)));
-//      }
-//   return chunks; 
-  
-// }
   // Validate input is 2D array of non-negative integers
 const isValid2dArray = (input, optCondition, ...optConParams) => {
     if (
@@ -39,7 +27,7 @@ const isValid2dArray = (input, optCondition, ...optConParams) => {
 
 const isNonNegativeInteger = input =>  Number.isInteger(input) && input >= 0;
 
- const isRowsAndColsLessThan = (rows, cols, rowNumber, colNumber) => rows && cols ? rows<rowNumber && cols<colNumber : false;
+const isRowsAndColsLessThan = (rows, cols, rowNumber, colNumber) => rows && cols ? rows<rowNumber && cols<colNumber : false;
 
 const isValidPassengers = input =>   isNonNegativeInteger(input) ? input : _throwError('Invalid passenger input. Must be a non-negative number.')
 
